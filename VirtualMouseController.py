@@ -129,7 +129,7 @@ class VirtualMouseController:
                     
                     # If fingers are close together, perform click
                     currentTime = time.time()
-                    if length < 40 and (currentTime - self.lastClickTime) > self.clickCooldown:
+                    if length < 60 and (currentTime - self.lastClickTime) > self.clickCooldown:
                         pyautogui.click()
                         self.lastClickTime = currentTime
                         status = "✓ CLICKED!"
@@ -178,7 +178,7 @@ class VirtualMouseController:
 
 
 def main():
-    controller = VirtualMouseController(frameReduction=100, smoothening=7)
+    controller = VirtualMouseController(frameReduction=100, smoothening=10)
     controller.run()
 
 
