@@ -1,3 +1,15 @@
-opencv-python==4.8.1.78 
-mediapipe==0.10.9 
-numpy==1.24.3 
+# Core Computer Vision
+opencv-python==4.8.1.78
+mediapipe==0.10.9
+numpy==1.24.3
+
+# Human-Computer Interaction Applications
+pyautogui==0.9.54
+
+# Volume Control (Windows only - optional)
+pycaw==20230407
+comtypes==1.2.0
+
+# Alternative for cross-platform audio (optional)
+# pulsectl==22.3.2  # For Linux
+# pyobjc-framework-CoreAudio==9.0  # For macOS
